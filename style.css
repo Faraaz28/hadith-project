@@ -1,0 +1,300 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #7dd1c6;
+   /* background-image: url(images/5110786.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;  */
+}
+
+.container {
+  width: 680px;
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px #060606;
+  background-color: #7dd1c6;
+  background-image: url(fda60e4f-2328-4035-a82b-b385a969c057.jpeg);
+  background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.hadith{
+  color: black;
+}
+
+header {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content {
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textarea {
+  text-align: center;
+}
+
+.hadis {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* .buttons {
+  margin-top: 20px;
+  text-align: center;
+} */
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.feature i {
+  margin-right: 10px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+}
+
+.narrator{
+  color: #050402;
+}
+
+.sound{
+  color: #050402;
+  cursor: pointer;
+  margin-right: 10px;
+  position: absolute;
+  bottom: 75%;
+  left: 15%;
+}
+
+.stop{
+  color: #050402;
+  cursor: pointer;
+  margin-right: 10px;
+  position: absolute;
+  bottom: 75%;
+  left:5%;
+  
+}
+
+/* .newb {
+  cursor: pointer;
+} */
+
+.text-box {
+  margin-left: 44vw;
+ margin-top: 42vh;
+}
+
+#google_translate_element{
+  position: absolute;
+  top: 50%;
+  right: 37%;
+
+}
+
+/* new button */
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 50px;
+  transition: all .4s;
+  position: absolute;
+  top: 10%;
+  right: 35%;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #0e0d0d;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(10px);
+  }
+} 
+
+@media only screen and (max-width: 768px) {
+
+  #hbutton{
+    display: block;
+    padding: -1px;
+    border-radius: 40px;
+    text-align: center;
+    /* left: 1px;
+    position: absolute; */
+    align-content: center;
+    margin-right: -60px;
+  }
+
+  .sound{
+  bottom: 82%;
+  left: 117%;
+  }
+  
+  .stop{
+   left: 107%;
+   bottom: 82%;
+  }
+
+  #google_translate_element{
+    position: absolute;
+    top: 40%;
+    right: 5%;
+  }
+
+
+  .feature{
+    padding-right: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+/* @media only screen and (max-width: 600px) {
+.container{
+  width: 100%;
+}
+
+#hbutton{
+  margin-right: 100px;
+  margin-bottom:10px;
+
+}
+
+.sound{
+  padding-left:10px; 
+  padding-top: 40px;
+  height: 10px;
+}
+
+.stop{
+  padding-left:100px;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+
+  #hbutton{
+    margin-right: -80px;
+  }
+
+  .sound{
+    padding-left:10px;
+    padding-bottom: 35px;
+  }
+  
+  .stop{
+    /* padding-left:00px; */
+    /* padding-bottom: 35px; */
+  
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+  #hbutton{
+    margin-right: -80px;
+  }
+
+  .sound{
+    padding-left:10px;
+    padding-bottom: 35px;
+  }
+  
+  .stop{
+    /* padding-left:00px; */
+    padding-bottom: 35px;
+  }
+
+
+
+
+
+}
